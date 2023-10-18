@@ -37,8 +37,8 @@ public class ScreenRecordActivity extends AppCompatActivity implements TextureVi
 
     private static final String TAG = "WOW";
     private static final int REQUEST_CODE = 1000;
-    private static final int DISPLAY_WIDTH = 720;
-    private static final int DISPLAY_HEIGHT = 1280;
+    private static final int DISPLAY_WIDTH = 1080;
+    private static final int DISPLAY_HEIGHT = 1920;
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
     private static final int REQUEST_PERMISSIONS = 10;
 
@@ -69,8 +69,8 @@ public class ScreenRecordActivity extends AppCompatActivity implements TextureVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
 
-        mWidth = 720;
-        mHeight = 1280;
+        mWidth = 1080;
+        mHeight = 1920;
 
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
